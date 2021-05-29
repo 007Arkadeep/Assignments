@@ -31,13 +31,20 @@ const Dashboard = () => {
     });
   });
     const canvas = {
-        padding:'0.5rem',
-        margin:'0.8rem',
-        borderRadius: '4px'
+        padding:'auto',
+        margin:'auto',
+        borderRadius: '4px',
+        position:'relative',
     }
+    const app = {
+      position:'relative',
+      height:'100%',
+      width:'100%',
+    }
+
     return (
-        <div className="App">
-            <canvas id="myChart" width="400" height="400" />
+        <div style={app}>
+            <canvas style={canvas} id="myChart"/>
         </div>
   
     )
